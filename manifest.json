@@ -1,7 +1,7 @@
 {
   "name": "Timeflix",
   "description" : "Enables playback rate modification of video elements.",
-  "version": "1.0",
+  "version": "1.1",
   "page_action": {
     "default_icon": {
       "16": "images/icon16.png",
