@@ -1,6 +1,6 @@
 {
   "name": "Timeflix",
-  "description" : "Enables playback rate modification on netflix.com",
+  "description" : "Enables playback rate modification of video elements.",
   "version": "1.0",
   "page_action": {
     "default_icon": {
@@ -16,7 +16,7 @@
     "128": "images/icon128.png"
   },
   "permissions": [
-    "https://www.netflix.com/watch/*",
+    "<all_urls>",
     "storage",
     "declarativeContent"
   ],
@@ -25,13 +25,5 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "web_accessible_resources": ["style.css"],
-  "content_scripts": [
-    {
-      "all_frames": true,
-      "js": ["content_script_setupobserver.js"],
-      "matches": ["https://www.netflix.com/watch/*"],
-      "run_at": "document_idle"
-    }
-  ]
+  "web_accessible_resources": ["style.css"]
 }

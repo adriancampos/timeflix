@@ -2,7 +2,6 @@
 const kMatchRule = {
   // Declare the rule conditions.
   conditions: [new chrome.declarativeContent.PageStateMatcher({
-    pageUrl: {hostEquals: 'www.netflix.com'},
     css: ["video"],
   })],
   // Shows the page action when the condition is met.

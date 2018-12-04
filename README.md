@@ -1,5 +1,5 @@
 # timeflix
-Enables playback rate modification on netflix.com. Will eventually expand to all sites with a video player
+Enables playback rate modification of video elements.
 
 ## Getting Started
 To install locally:

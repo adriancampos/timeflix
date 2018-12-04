@@ -4,7 +4,9 @@ chrome.storage.local.get(['speed'], function(object) {
   
   // console.log("Attempting to set speed to: " + speedValue);
   
-  document.querySelector('video').playbackRate = speedValue;
+  document.querySelectorAll('video').forEach(function(item) {
+    item.playbackRate = speedValue;
+  });
   
 });
 
